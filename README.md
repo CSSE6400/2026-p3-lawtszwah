@@ -1,13 +1,23 @@
-[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=23073144)
-# CSSE6400 Week 3 Practical
+# Todo API
 
-Containerisation of our Todo application using Docker and Docker Compose.
+This project containerises a Flask Todo API using Docker and Docker Compose.
 
-Please see the [instructions](https://csse6400.uqcloud.net/practicals/week03) for more details.
+## Features
 
-Update this README file with appropriate information about your project,
-including how to run it.
+- Flask-based Todo API
+- Docker support for running the application in a container
+- Docker Compose support for running the application with PostgreSQL
 
-There are [resources](https://www.makeareadme.com) available to help you write a good README file.
+## Project Structure
 
+- `todo/` - application source code
+- `Dockerfile` - builds the application image
+- `docker-compose.yml` - runs the application and PostgreSQL together
+- `tests/` - test files
 
+## Run with Docker
+
+Build the image:
+
+```bash
+docker build -t todo .
